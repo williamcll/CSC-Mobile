@@ -1,10 +1,11 @@
 package com.chuhai.helloworldapplication;
 
-import android.support.v7.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-
+import android.widget.TextView;
+import android.widget.Toast;
 import java.util.Random;
 
 public class MainActivity extends AppCompatActivity {
@@ -24,11 +25,19 @@ public class MainActivity extends AppCompatActivity {
     private void pickRandomNumbers() {
         // TODO: Chooses two random numbers from 0-9 and
         //       places them on the left/right buttons.
-        Random r = new Random();
-        int leftRan = r.nextInt(10 - 0) + 0;
-        int RightRan = r.nextInt(10 - 0) + 0;
-        Button leftBtn = (Button)findViewById(R.id.Leftbutton);
-        Button RightBtn = (Button)findViewById(R.id.Rightbutton);
+       Random r = new Random();
+       int R1 = r.nextInt(10);
+       int R2 = 0;
+       while (true) {
+           int R2 = r.nextInt(10);
+           if (R2 != R1) break;
+       }
+       Button Lbutton = (Button) findViewById(R.id.Leftbutton);
+       Lbutton.setText(String.valueOf(R1));
+       Button Rbutton = (Button) findViewById(R.id.Rightbutton);
+       Rbutton.setText(String.valueOf(R2));
+
+
     }
 
     // Called when the left number button is clicked.
