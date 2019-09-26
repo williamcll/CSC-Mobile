@@ -19,11 +19,5 @@ public class MainActivity extends AppCompatActivity {
      * Called when the various radio buttons are clicked.
      * Changes which turtle image is showing in the ImageView on screen.
      */
-    public void radioClick(View view) {
-        //Task 1: Get the imageview object
-
-
-        //Task 2: choose image to show based on ID of radio button clicked
-    }
 
 }
