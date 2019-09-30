@@ -6,13 +6,51 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="154dp"
+        tools:layout_editor_absoluteY="131dp"
+        android:gravity="center|top">
 
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checkedButton="@id/Leo"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/Leo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="Leo" />
+
+            <RadioButton
+                android:id="@+id/Mike"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mike" />
+
+            <RadioButton
+                android:id="@+id/Don"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Don" />
+
+            <RadioButton
+                android:id="@+id/Raph"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Raph" />
+        </RadioGroup>
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/tmntleo" />
+
+    </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
