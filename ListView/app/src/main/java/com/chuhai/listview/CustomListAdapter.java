@@ -1,3 +1,7 @@
+package com.chuhai.listview;
+
+import com.chuhai.listview.ListItem;
+
 public class CustomListAdapter {
     private ArrayList<ListItem> listData;
     private LayoutInflater layoutInflater;

@@ -1,3 +1,5 @@
+package com.chuhai.listview;
+
 public class ListItem {
     private String name;
     private String designation;
