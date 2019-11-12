@@ -1,4 +1,4 @@
-package com.chuhai.madlibs;
+package com.chuhai.madlib;
 
 import org.junit.Test;
 

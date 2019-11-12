@@ -1,4 +1,4 @@
-package com.chuhai.madlibs;
+package com.chuhai.madlib;
 
 import android.content.Context;
 
@@ -22,6 +22,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getInstrumentation().getTargetContext();
 
-        assertEquals("com.chuhai.madlibs", appContext.getPackageName());
+        assertEquals("com.chuhai.madlib", appContext.getPackageName());
     }
 }
