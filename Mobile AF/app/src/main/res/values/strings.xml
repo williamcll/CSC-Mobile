@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Final Assignment</string>
+    <string name="add_item">Add Item</string>
+    <string name="enter_a_new_item">Enter a new item</string>
+    <string name="long_press_an_item_to_remove_it">Long-press an item to remove it</string>
+    <string name="to_do_list_app">TO-DO LIST APP!</string>
+    <string name="add">ADD</string>
+</resources>
